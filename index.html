@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Link Fancybox CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+  <script src="./js/swiper.js" defer></script>
+  <script src="./js/accordion.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <img src="./images/logo.svg" alt="Logo" class="header-logo">
+      <img src="./images/location.svg" alt="" class="header-location">
+      <a href="tel:88006008930" class="header-phone">
+        <img src="./images/call.svg" alt="Call icon">
+        <p class="header-phone-text">Горячая линия: 8 800 600 89 30</p>
+      </a>
+    </div>
+    <div class="header-content">
+      <nav class="nav">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#" class="menu-link">Модельный ряд</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Покупателям</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Владельцам</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Дилеры SWM</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Стать дилером</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Мир SWM</a></li>
+        </ul>
+      </nav>
+      <img src="./images/logo-rigth.svg" alt="" class="header-right-logo">
+      <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </header>
+
+  <div class="nav-wrap-mobile">
+    <div class="menu-close-btn">
+      <div class="menu-close-btn-wrap">
+        <i class="fa-solid fa-xmark close-btn-menu-icon"></i>
+      </div>
+    </div>
+    <nav class="nav-mobile">
+      <ul class="menu-list-mobile">
+        <li class="menu-item"><a href="#" class="menu-link">Модельный ряд</a><i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li class="menu-item"><a href="#" class="menu-link">Покупателям</a><i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li class="menu-item"><a href="#" class="menu-link">Владельцам</a><i class="fa-solid fa-chevron-right"></i>
+        </li>
+        <li class="menu-item"><a href="#" class="menu-link">Дилеры SWM</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Стать дилером</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Мир SWM</a><i class="fa-solid fa-chevron-right"></i></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="main">
+    <!-- visual head -->
+    <div class="st102-00__visual-container">
+      <div class="st102-00__visual-background" style="background-color:rgba(0, 0, 0, 0.3);"></div>
+      <div class="st102-00__picture">
+        <div class="atm u106-00" data-object-ratio="16x9">
+          <picture class="u106-00__picture">
+            <source srcset="https://cdn.kodixauto.ru/media/image/webp/65544182f28fa87f7e0d203b"
+              media="(min-width: 1200px)" type="image/webp" data-srcset="">
+            <source srcset="https://cdn.kodixauto.ru/media/image/65544182f28fa87f7e0d203b" media="(min-width: 1200px)"
+              data-srcset="">
+            <source srcset="https://cdn.kodixauto.ru/media/image/webp/6554418ef28fa87f7e0d203c"
+              media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" data-srcset="">
+            <source srcset="https://cdn.kodixauto.ru/media/image/6554418ef28fa87f7e0d203c"
+              media="(min-width: 768px) and (max-width: 1199px)" data-srcset="">
+            <source srcset="https://cdn.kodixauto.ru/media/image/webp/6554419afcff6bc8179ca1d4"
+              media="(max-width: 767px)" type="image/webp" data-srcset="">
+            <source srcset="https://cdn.kodixauto.ru/media/image/6554419afcff6bc8179ca1d4" media="(max-width: 767px)"
+              data-srcset="">
+            <img class="u106-00__image" alt="SWM G01" title="SWM G01" draggable="false" data-object-fit="cover"
+              src="https://cdn.kodixauto.ru/media/image/65544182f28fa87f7e0d203b">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- visual end -->
+    <div class="main-container">
+      <div class="main-panel">
+        <h1 class="main-title">Практичный SWM G01</h1>
+        <div class="main-actions">
+          <a href="#" class="btn btn-light">Связаться с дилером</a>
+          <a href="#" class="btn btn-red">Условия кредита</a>
+          <a href="" class="btn btn-dark-light">Автомобили SWM G01 в наличии</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="inner">
+    <div class="container">
+      <div class="inner-col">
+        <div class="inner">
+          <div class="nav-inners">
+            <nav class="nav-inner">
+              <a href="" class="nav-inner-link">Обзор</a>
+              <a href="" class="nav-inner-link">Дизайн</a>
+              <a href="" class="nav-inner-link">Интерьер</a>
+              <a href="" class="nav-inner-link">Комфорт</a>
+              <a href="" class="nav-inner-link">Безопасность</a>
+              <a href="" class="nav-inner-link">Технические характеристики</a>
+              <a href="" class="nav-inner-link">комплектации и цены</a>
+            </nav>
+          </div>
+          <div class="inner-btns">
+            <div class="btn btn-red">Авто в наличии</div>
+            <div class="btn btn-small btn-dark-light"> <img src="./images/arrow-btn.svg" alt=""> Брошюра</div>
+          </div>
+        </div>
+        <div class="inner-btns-mobile">
+          <div class="btn btn-red">Авто в наличии</div>
+          <div class="btn btn-small btn-dark-light"> <img src="./images/arrow-btn.svg" alt=""> Брошюра</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <h1 class="headline-title">SWM G01 идеален в деталях</h1>
+      <div class="desc-wrap">
+        <div class="desc-item">
+          <img src="./images/bright.svg" alt="">
+          <div class="desc-texts">
+            <h4 class="desc-texts__title">Яркий</h4>
+            <p class="desc-texts__desc">
+              SWM G01 — аутентичный среднеразмерный кроссовер. Синергия элегантного дизайна, оснащения и технологичности
+              — все это новый G01.
+            </p>
+          </div>
+        </div>
+        <div class="desc-item">
+          <img src="./images/eco-friendly.svg" alt="">
+          <div class="desc-texts">
+            <h4 class="desc-texts__title">Экологичный</h4>
+            <p class="desc-texts__desc">
+              В системе кондиционирования используется фильтр мелких частиц с высоким уровнем защиты N95. Он
+              останавливает более 95% вредных элементов размером более 0,3 мкм.
+            </p>
+          </div>
+        </div>
+        <div class="desc-item">
+          <img src="./images/reliable.svg" alt="">
+          <div class="desc-texts">
+            <h4 class="desc-texts__title">Надежный</h4>
+            <p class="desc-texts__desc">
+              Подушки безопасности, датчики парковки, комплекс электронных систем стабилизации движения и торможения,
+              камера заднего вида с динамической разметкой, крепления для детских сидений ISOFIX дарят уверенность в
+              любой ситуации.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/dgq4VOdhYF8?si=oZBlI08CH0hHgYG8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about-g01">
+      <div class="container">
+        <div class="about-g01-content">
+          <h5 class="about-g01-content__title">Изысканная <br> концепция</h5>
+          <p class="about-g01-content__text">
+            С первого взгляда это элегантный и роскошный автомобиль.
+            Его передняя часть и интерьер создают ощущение значимости и
+            безопасности.
+            Решетка со стрелкой и ее продолжение в сторону хвостовой
+            части стрелы создают идеальные линии.
+            Во всем автомобиле используется изысканная концепция,
+            полная совершенства и ослепительной индивидуальности.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-g01 about-g01-end">
+      <div class="container">
+        <div class="about-g01-content">
+          <h5 class="about-g01-content__title">Итальянское удовольствие. <br>
+            Интерьер, создающий <br>
+            ощущение свободы</h5>
+          <p class="about-g01-content__text">
+            Колесная база и большой кузов отражают
+            настоящую индивидуальность внедорожника.
+            Максимальный уровень вместительности. Задние сиденья
+            можно легко сложить, образуя совершенно ровную
+            заднюю часть. Сбалансирован для всех аспектов жизни.
+            Ощущение свободы начинается внутри автомобиля.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-g01 about-g01-second">
+      <div class="container">
+        <div class="about-g01-content">
+          <h5 class="about-g01-content__title">Гордость <br>
+            восприятия на 360°</h5>
+          <p class="about-g01-content__text">
+            Внутренние особенности SWM бесчисленны, поэтому
+            мы выделяем вход без ключа PEPS и запуск одной
+            кнопкой, эффективный климат-контроль и панорамный
+            стеклянный люк с электроприводом, приятную и удобную
+            систему подогрева итальянских кожаных сидений,
+            систему выбора стиля вождения и круиз-контроль. <br> <br>
+            Характеристики, которые делают этот автомобиль идеальным
+            для тех, кто хочет насладиться комфортом, безопасностью и счастьем,
+            которые он вам приносит.
+            Автомобиль, полный инженерного таланта и
+            ослепительной индивидуальности.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="advantages">
+        <div class="advantage">
+          <p class="advantage-title">1,5</p>
+          <p class="advantage-desc">Объём двигателя, л</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage-title">139</p>
+          <p class="advantage-desc">Мощность, л.с</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage-title">13,1</p>
+          <p class="advantage-desc">Разгон до 100 км/ч, с</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage-title">212</p>
+          <p class="advantage-desc">Крутящий момент, Нм</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage-title">52</p>
+          <p class="advantage-desc">Объём топливного бака, л</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage-title">Евро 5</p>
+          <p class="advantage-desc">Экологический класс</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="slider-dots-wrap">
+        <div class="slider-dots">
+          <!-- Swiper -->
+          <div class="swiper sliderDots">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/slider-dots-g01-light.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slider-dots-g01-light.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slider-dots-g01-light.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slider-dots-g01-light.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slider-dots-g01-light.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-dots"></div>
+          </div>
+        </div>
+        <div class="slider-dots-content">
+          <h2 class="slider-dots-content__title">Цвета SWM G01</h2>
+          <p class="slider-dots-content__text">
+            Стильные цвета кузова с эффектом металлик подчеркивают яркий дизайн SWM G01.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="headlights">
+        <div class="headlight">
+          <img src="./images/headlights-1.png" alt="">
+          <p class="headlight-desc">
+            Светодиодные фары ближнего света <br>
+            Светодиодные дневные ходовые огни
+          </p>
+        </div>
+        <div class="headlight">
+          <img src="./images/headlights-2.png" alt="">
+          <p class="headlight-desc">
+            Светодиодные задние комбинированные фонари
+          </p>
+        </div>
+        <div class="headlight">
+          <img src="./images/headlights-3.png" alt="">
+          <p class="headlight-desc">
+            Задние датчики парковки (4) <br>
+            Камера заднего вида с динамическими линиями разметки
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="wrap-g01">
+        <a href="./images/g01-1.png" data-fancybox="gallery">
+          <img src="./images/g01-1.png" />
+        </a>
+        <a href="./images/g01-2.png" data-fancybox="gallery">
+          <img src="./images/g01-2.png" />
+        </a>
+        <a href="./images/g01-3.png" data-fancybox="gallery">
+          <img src="./images/g01-3.png" />
+        </a>
+      </div>
+      <div class="slider-g01">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="./images/g01-1.png" data-fancybox="gallery-slider">
+                <img src="./images/g01-1.png" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./images/g01-2.png" data-fancybox="gallery-slider">
+                <img src="./images/g01-2.png" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./images/g01-3.png" data-fancybox="gallery-slider">
+                <img src="./images/g01-3.png" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="car-interior_title">Загляните в салон SWM G01</h3>
+      <div class="car-interior">
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-1.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-2.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-3.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-4.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-5.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-6.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-7.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-8.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-9.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-10.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-11.png" />
+        </a>
+        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-12.png" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="comport-title">Располагайтесь с комфортом</h3>
+      <div class="headlights">
+        <div class="headlight">
+          <img src="./images/g01-comfort-1.png" alt="">
+          <p class="headlight-desc">
+            Панорамная крыша с люком площадью 0,957 м² наполнит <br>
+            ваш салон естественным светом.
+          </p>
+        </div>
+        <div class="headlight">
+          <img src="./images/g01-comfort-2.png" alt="">
+          <p class="headlight-desc">
+            Комфортные сиденья позволят вам путешествовать с <br>
+            наслаждением в любую погоду.
+          </p>
+        </div>
+        <div class="headlight">
+          <img src="./images/g01-comfort-3.png" alt="">
+          <p class="headlight-desc">
+            Климат-контроль позволит вам поддерживать в салоне <br>
+            оптимальную температуру.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="multimedia">
+        <div class="multimedia-img">
+          <img src="./images/multimedia.png" alt="">
+        </div>
+        <div class="multimedia-content">
+          <h5 class="multimedia-content__title">Технологии и мультимедиа</h5>
+          <p class="multimedia-content__text">
+            SWM G01 имеет прогрессивную мультимедийную систему на базе Android c цветным
+            сенсорным дисплеем диагональю 10 дюймов. С ее помощью можно с легкостью загружать
+            приложения из Google Play и пользоваться онлайн-сервисами без ограничений. Слот для
+            SIM-карты открывает доступ к интернету 4G LTE, а функция встроенного Wi-Fi при желании
+            позволяет «раздавать» интернет на устройства поблизости. Что касается аудиосистемы, то
+            объемное звучание достигается благодаря 7 динамикам.
+          </p>
+          <p class="multimedia-content__desc">
+            Цифровая приборная панель с 7-дюймовым дисплеем, светодиодные дневные ходовые
+            огни и фары ближнего света, панорамная крыша с люком 1100х850 мм.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="drivings-title">Вождение и безопасность</h3>
+      <div class="drivings">
+        <div class="driving">
+          <img src="./images/driving-g01-1.png" alt="">
+          <p class="driving__text">Система удержания автомобиля при подъеме (HHC)</p>
+        </div>
+        <div class="driving">
+          <img src="./images/driving-g01-2.png" alt="">
+          <p class="driving__text">Механизм блокировки открывания задних боковых дверей изнутри («Детский замок»)</p>
+        </div>
+      </div>
+      <div class="characteristics">
+        <div class="characteristics-img">
+          <img src="./images/driving-g01-3.png" alt="">
+        </div>
+        <div class="characteristics-content">
+          <h5 class="characteristics-content__title">Характеристики</h5>
+          <p class="characteristics-content__text">
+            Под капотом у SWM G01 расположен двигатель с турбонаддувом объемом 1499 см³
+            мощностью 138 л.с. Плавное переключение передач и разумный расход топлива
+            обеспечивают 7-ступенчатая преселективная автоматическая коробка передач с двойным
+            сцеплением и передний привод.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="specifications">
+    <div class="container">
+      <h3 class="specifications-title">Технические характеристики SWM G01</h3>
+      <div class="specifications">
+        <div class="specification">
+          <div class="specification-title">Основные характеристики</div>
+          <div class="specification-container">
+            <div class="specification-list">
+              <div class="specification-item">
+                <div class="specification-item__title">Модель двигателя</div>
+                <div class="specification-item__value">SWD15T</div>
+              </div>
+              <div class="specification-item">
+                <div class="specification-item__title">Рабочий объём, см3</div>
+                <div class="specification-item__value">1499</div>
+              </div>
+              <div class="specification-item">
+                <div class="specification-item__title">Максимальная мощность, л.с. / об/мин</div>
+                <div class="specification-item__value">139 / 5600</div>
+              </div>
+            </div>
+            <div class="specification-list">
+              <div class="specification-item">
+                <div class="specification-item__title">Тип коробки передач</div>
+                <div class="specification-item__value">7-DCT</div>
+              </div>
+              <div class="specification-item">
+                <div class="specification-item__title">Тип привода</div>
+                <div class="specification-item__value">Передний</div>
+              </div>
+            </div>
+          </div>
+          <div class="all-characteristics">
+            <div class="all-characteristics-head">
+              Все характеристики
+              <img src="./images/arrow-down.svg" alt="">
+            </div>
+            <div class="specification-boxes">
+              <div class="specification-box">
+                <div class="specification-title">Габаритные размеры</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Длина, мм</div>
+                      <div class="specification-item__value">4610</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Ширина, мм</div>
+                      <div class="specification-item__value">1855</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Высота, мм</div>
+                      <div class="specification-item__value">1725</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Колесная база, мм</div>
+                      <div class="specification-item__value">2750</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Передний свес, мм</div>
+                      <div class="specification-item__value">968</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Задний свес, мм</div>
+                      <div class="specification-item__value">892</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Колея передняя / задняя, мм</div>
+                      <div class="specification-item__value">1575 / 1575</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Угол въезда, град</div>
+                      <div class="specification-item__value">23</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Угол съезда, град</div>
+                      <div class="specification-item__value">31</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Снаряженная масса, кг</div>
+                      <div class="specification-item__value">1625</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Полная масса, кг</div>
+                      <div class="specification-item__value">1925</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Внутренние объёмы</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Объём топливного бака, л</div>
+                      <div class="specification-item__value">52</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Двигатель</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Модель двигателя</div>
+                      <div class="specification-item__value">SWD15T</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип двигателя</div>
+                      <div class="specification-item__value">Бензиновый</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Турбонаддув</div>
+                      <div class="specification-item__value">Да, с интеркулером</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Рабочий объём, см3</div>
+                      <div class="specification-item__value">1499</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Степень сжатия</div>
+                      <div class="specification-item__value">9.0 : 1</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Максимальная мощность, кВт / об/мин</div>
+                      <div class="specification-item__value">102 / 5600</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Максимальная мощность, л.с. / об/мин</div>
+                      <div class="specification-item__value">139 / 5600</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Максимальный крутящий момент, Нм / об/мин</div>
+                      <div class="specification-item__value">212 / 2000-4000</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип впрыска</div>
+                      <div class="specification-item__value">Распределённый</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Вид топлива</div>
+                      <div class="specification-item__value">Бензин с октановым числом не менее 95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Трансмиссия</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип коробки передач</div>
+                      <div class="specification-item__value">7-DCT</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">I</div>
+                      <div class="specification-item__value">4.154</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">II</div>
+                      <div class="specification-item__value">2.522</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">III</div>
+                      <div class="specification-item__value">1.242</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">IV</div>
+                      <div class="specification-item__value">0.915</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">V</div>
+                      <div class="specification-item__value">0.787</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">VI</div>
+                      <div class="specification-item__value">0.745</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">VII</div>
+                      <div class="specification-item__value">0.608</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Задний ход</div>
+                      <div class="specification-item__value">3.260</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип привода</div>
+                      <div class="specification-item__value">Передний</div>
+                    </div>
+                    <div class="specification-item">
+                      <div class="specification-item__title">Главная передача</div>
+                      <div class="specification-item__value">4.053 / 5.133</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Подвеска</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Передняя</div>
+                      <div class="specification-item__value">Независимая, типа Макферсон</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Задняя</div>
+                      <div class="specification-item__value">Полузависимая, торсионная балка</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Тормозная система</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Спереди</div>
+                      <div class="specification-item__value">Вентилируемые диски</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Сзади</div>
+                      <div class="specification-item__value">Невентилируемые диски</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Шины и диски</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип дисков</div>
+                      <div class="specification-item__value">Лекгосплавные</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Типоразмер шин</div>
+                      <div class="specification-item__value">225/60R18</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Рулевое управление</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Тип рулевого механизма</div>
+                      <div class="specification-item__value">Шестерня-рейка</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Усилитель руля</div>
+                      <div class="specification-item__value">Электроусилитель (EPS)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specification-box">
+                <div class="specification-title">Эксплуатационные характеристики</div>
+                <div class="specification-container">
+                  <div class="specification-list">
+                    <div class="specification-item">
+                      <div class="specification-item__title">Экологический класс</div>
+                      <div class="specification-item__value">Евро 6</div>
+                    </div>
+                  </div>
+                  <div class="specification-list">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="equipments-title">КОМПЛЕКТАЦИИ и ЦЕНЫ SWM G01</h3>
+      <div class="equipments">
+        <div class="equipment-col">
+          <div class="equipment">
+            <img src="./images/equipment-g01-1.png" alt="">
+            <h5 class="equipment__title">Экстерьер и Интерьер</h5>
+            <ul class="equipment-list">
+              <li class="equipment-item">∙ Панорамная крыша с электроприводом</li>
+              <li class="equipment-item">∙ Боковые зеркала с электроприводом, обогревом и электроскладыванием</li>
+              <li class="equipment-item">∙ Светодиодные фары</li>
+              <li class="equipment-item">∙ Светодиодная подсветка поворотов</li>
+              <li class="equipment-item">∙ Функция фар головного света "Follow me home"</li>
+              <li class="equipment-item">∙ 18" легкосплавные колёсные диски</li>
+              <li class="equipment-item">∙ Задний подлокотник</li>
+              <li class="equipment-item">∙ Мультифункциональный руль</li>
+              <li class="equipment-item">∙ 7" цветной дисплей комбинации приборов</li>
+              <li class="equipment-item">∙ Электронный селектор управления трансмиссией</li>
+              <li class="equipment-item">∙ 10" сенсорный дисплей мультимедиа системы</li>
+              <li class="equipment-item">∙ Коммуникационная система Bluetooth ©</li>
+              <li class="equipment-item">∙ Аудиосистема с 7 динамиками</li>
+            </ul>
+            <a href="" class="btn-big btn-dark-light">
+              <img src="./images/arrow-btn.svg" alt="">
+              Скачать брошюру
+            </a>
+          </div>
+        </div>
+        <div class="equipment-col">
+          <div class="equipment">
+            <img src="./images/equipment-g01-2.png" alt="">
+            <h5 class="equipment__title">Безопасность</h5>
+            <ul class="equipment-list">
+              <li class="equipment-item">∙ Фронтальные подушки безопасности водителя и переднего пассажира</li>
+              <li class="equipment-item">∙ Боковые подушки безопасности</li>
+              <li class="equipment-item">∙ Антиблокировочная система тормозов (ABS)</li>
+              <li class="equipment-item">∙ Электронная система распределения тормозных усилий (EBD)</li>
+              <li class="equipment-item">∙ Усилитель экстренного торможения (EBA)</li>
+              <li class="equipment-item">∙ Система сигнализации аварийного торможения (ESS)</li>
+              <li class="equipment-item">∙ Антипробуксовочная система (TCS)</li>
+              <li class="equipment-item">∙ Система курсовой устойчивости (ESP)</li>
+              <li class="equipment-item">∙ Электромеханический стояночный тормоз (EPB)</li>
+              <li class="equipment-item">∙ Система помощи при подъёме по склону (HHC)</li>
+              <li class="equipment-item">∙ Система контроля давления в шинах (TPMS)</li>
+            </ul>
+            <a href="" class="btn-big btn-red">
+              <img src="./images/arrow-btn.svg" alt="">
+              Скачать Прайс-лист 2023 г.в.
+            </a>
+          </div>
+        </div>
+        <div class="equipment-col">
+          <div class="equipment">
+            <img src="./images/equipment-g01-3.png" alt="">
+            <h5 class="equipment__title">Комфорт</h5>
+            <ul class="equipment-list">
+              <li class="equipment-item">∙ Подогрев сиденья водителя</li>
+              <li class="equipment-item">∙ Климат-контроль</li>
+              <li class="equipment-item">∙ Камера заднего вида с динамическими линиями разметки</li>
+              <li class="equipment-item">∙ Система бесключевого доступа и кнопка запуска двигателя</li>
+              <li class="equipment-item">∙ Круиз-контроль</li>
+              <li class="equipment-item">∙ Климат-контроль</li>
+            </ul>
+            <a href="" class="btn-big btn-red">
+              <img src="./images/arrow-btn.svg" alt="">
+              Скачать Прайс-лист 2024 г.в.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials-box">
+        <div class="footer-socials">
+          <a href="#" class="footer-social"><img src="./images/tg.svg" alt=""></a>
+          <a href="#" class="footer-social"><img src="./images/vk.svg" alt=""></a>
+          <a href="#" class="footer-social"><img src="./images/ok.svg" alt=""></a>
+          <a href="#" class="footer-social"><img src="./images/plus.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Модельный ряд</a>
+            <ul class="footer-col-section-list">
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">SWM G01</a>
+              </li>
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">SWM G01F</a>
+              </li>
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">SWM G05 Pro</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Стать дилером</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Покупателям</a>
+            <ul class="footer-col-section-list">
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">Выбор и покупка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Мир SWM</a>
+            <ul class="footer-col-section-list">
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">Новости компании</a>
+              </li>
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">Видеобзоры SWM</a>
+              </li>
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">Публикации в СМИ</a>
+              </li>
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">История марки SWM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Владельцам</a>
+            <ul class="footer-col-section-list">
+              <li class="footer-col-section-item">
+                <a href="#" class="footer-col-section-link">Сервис и поддержка</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-section">
+            <a href="#" class="footer-col-section__title">Дилеры SWM</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-offer">
+          <a href="#" class="footer-offer-privacy">Политика конфиденциальности</a>
+          <p class="footer-offer-text">
+            <br>
+            Представленные на сайте изображения автомобилей могут отличаться от автомобилей, доступных в дилерских
+            центрах. Отображение цветов на экранах различных устройств может отличаться от цвета реального автомобиля.
+            Некоторые опции и цвета автомобиля на изображениях могут быть не доступны в дилерских центрах. <br>
+            Вся представленная на сайте информация, касающаяся автомобилей, носит информационный характер и не является
+            публичной офертой. Фактические характеристики могут быть изменены в любое время. Все цены, указанные на
+            сайте, не являются окончательными и устанавливаются дилерскими центрами индивидуально. <br>
+            ООО «ВОСТОК ВЕТЕР РУС» не гарантирует своевременность, точность и полноту информации на сайте, а также
+            беспрепятственный доступ к сайту в любое время. Опубликованная информация может быть изменена в любое время
+            без предварительного уведомления. <br>
+            Информация о соответствующих моделях и комплектациях и их наличии, ценах, возможных выгодах и условиях
+            приобретения доступна у <a href="#" class="footer-offer-text__link">официальных дилеров SWM</a>. Товар
+            сертифицирован. <br><br>
+            Для СМИ — <a href="#">pr@swm-auto.ru</a> <br>
+            Телефон горячей линии: <a href="tel:88006008930">8 800 600 89 30</a>
+          </p>
+        </div>
+        <div class="footer-copyright">
+          <br>
+          © 2024, все права защищены
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
