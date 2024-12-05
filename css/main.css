@@ -54,24 +54,25 @@ body {
   justify-content: space-between;
   padding: 40px 0;
   border-bottom: 2px solid #d4d1d1;
+  gap: clamp(0.625rem, 3.472vw - 1.042rem, 3.125rem);
 }
 
 .header-contacts {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: clamp(0.625rem, 7.813vw - 3.125rem, 6.25rem);
 }
 
 .header-contact {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: clamp(0.625rem, 3.472vw - 1.042rem, 3.125rem);
 }
 
 .header-socials {
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(0.625rem, 0.868vw + 0.208rem, 1.25rem);
 }
 
 .header-social {
@@ -87,13 +88,13 @@ body {
 .address {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(0.625rem, 0.868vw + 0.208rem, 1.25rem);
 }
 
 .header-phone {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(0.625rem, 0.868vw + 0.208rem, 1.25rem);
   transition: all .3s ease;
 }
 
@@ -143,6 +144,14 @@ body {
 
 .menu-item-drop:hover>.menu-list-dropdowns {
   transform: scale(1);
+}
+
+.menu-list-dropdowns.active {
+  transform: scale(1);
+}
+
+.menu-btn-open {
+  cursor: pointer;
 }
 
 /* main */
@@ -699,6 +708,60 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+
+  /* header */
+  .header-head {
+    gap: 20px;
+  }
+
+  .header-contacts {
+    flex-wrap: wrap;
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fff;
+    transition: all .4s linear;
+    transform: translateX(100%);
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 1.5rem;
+  }
+
+  .nav-close-wrap {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .nav-close-btn {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+
+  .nav-close-btn:hover {
+    transform: rotate(180deg);
+  }
+
+  .address svg,
+  .header-phone svg {
+    display: none;
+  }
+
   .brands-arrows-btn-prev {
     right: 0;
   }
