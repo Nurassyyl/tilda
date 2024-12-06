@@ -30,6 +30,7 @@ li {
   text-align: center;
   font-size: 24px;
   transition: all .4s linear;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -50,6 +51,7 @@ body {
 
 body.hidden {
   overflow: hidden;
+  padding-right: 17px;
 }
 
 .header-head {
@@ -653,6 +655,100 @@ body.hidden {
   flex-wrap: wrap;
   gap: clamp(0.313rem, 2.17vw - 0.729rem, 1.875rem);
   margin-top: 25px;
+}
+
+/* modal-form */
+
+.modal-form {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow-y: auto;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s linear;
+}
+
+.modal-body {
+  position: relative;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.modal-form-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.modal-form-close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  color: #d4d1d1;
+  transition: all .3s linear;
+}
+
+.modal-form-close-btn:hover {
+  color: #b1b1b1;
+}
+
+.modal-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.modal-form-list {
+  margin: 20px 0;
+}
+
+.modal-form-item {
+  list-style-type: disc;
+}
+
+.modal-form-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form-form input[type="text"] {
+  font-family: "Source Sans 3", "Roboto", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  max-width: 470px;
+  height: 60px;
+  padding: 0 20px;
+  outline: none;
+  border: 1px solid #d4d1d1;
+  border-radius: 5px;
+}
+
+.modal-form-form-btn {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 470px;
+  height: 54px;
+  font-size: clamp(1rem, 0.8709rem + 0.5298vw, 1.5rem);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
