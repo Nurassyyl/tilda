@@ -23,6 +23,7 @@
   <script src="./js/swiper.js" defer></script>
   <script src="./js/accordion.js" defer></script>
   <script src="./js/menu.js" defer></script>
+  <script src="./js/tabs.js" defer></script>
 </head>
 
 <body>
@@ -57,14 +58,79 @@
     </div>
     <nav class="nav-mobile">
       <ul class="menu-list-mobile">
-        <li class="menu-item"><a href="#" class="menu-link">Модельный ряд</a><i class="fa-solid fa-chevron-right"></i>
+        <li class="menu-item submenu-item" data-submenu="submenu-1"><a href="#" class="menu-link">Модельный ряд</a><i
+            class="fa-solid fa-chevron-right"></i>
         </li>
-        <li class="menu-item"><a href="#" class="menu-link">Покупателям</a><i class="fa-solid fa-chevron-right"></i>
+        <li class="menu-item submenu-item" data-submenu="submenu-2"><a href="#" class="menu-link">Покупателям</a><i
+            class="fa-solid fa-chevron-right"></i>
         </li>
-        <li class="menu-item"><a href="#" class="menu-link">Владельцам</a><i class="fa-solid fa-chevron-right"></i>
+        <li class="menu-item submenu-item" data-submenu="submenu-3"><a href="#" class="menu-link">Владельцам</a><i
+            class="fa-solid fa-chevron-right"></i>
         </li>
       </ul>
     </nav>
+    <div class="submenu-mobile" id="submenu-1">
+      <div class="menu-close-btn">
+        <div class="menu-close-btn-wrap">
+          <i class="fa-solid fa-xmark close-btn-submenu-icon"></i>
+        </div>
+      </div>
+      <div class="menu-close-btn">
+        <div class="submenu-close-btn-wrap submenu-back-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+          НАЗАД
+        </div>
+      </div>
+      <div class="submenu-mobile-tabs-head">
+        <div class="submenu-mobile-tabs-head__title _active" data-tab="tab_1">Кроссоверы SWM</div>
+        <div class="submenu-mobile-tabs-head__title" data-tab="tab_2">SWM в наличии</div>
+      </div>
+      <div class="submenu-mobile-tabs-content">
+        <div class="submenu-mobile-tabs-content__list _active" id="tab_1">
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./images/G01-first-slider-light.jpg" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G01</div>
+            </a>
+            <div class="submenu-mobile-tabs-content__price">от 1 416 000 ₽*</div>
+          </div>
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./01F/01F-first-slider-blue.jpg" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G01F</div>
+            </a>
+            <div class="submenu-mobile-tabs-content__price">от 1 536 000 ₽*</div>
+          </div>
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./05PRO/G05PRO-first-slider-red.jpg" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G05 Pro</div>
+            </a>
+            <div class="submenu-mobile-tabs-content__price">от 1 596 000 ₽*</div>
+          </div>
+        </div>
+        <div class="submenu-mobile-tabs-content__list" id="tab_2">
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./images/g01-1.png" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G01</div>
+            </a>
+          </div>
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./01F/01F-headlights-2.jpg" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G01</div>
+            </a>
+          </div>
+          <div class="submenu-mobile-tabs-content__item">
+            <a href="#"><img src="./01F/01F-panel-slider-2.jpg" alt=""></a>
+            <a href="#">
+              <div class="submenu-mobile-tabs-content__title">SWM G01</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <main class="main">
@@ -277,19 +343,19 @@
         <div class="slider-dots">
           <div class="slider-dot">
             <div>
-              <img src="./01F/01F-first-slider-blue.jpg" alt="">
+              <img src="./g01/G01-first-slider-blue.jpg" alt="">
             </div>
             <div>
-              <img src="./01F/01F-first-slider-light.jpg" alt="">
+              <img src="./g01/G01-first-slider-light.jpg" alt="">
             </div>
             <div>
-              <img src="./01F/01F-first-slider-grey.jpg" alt="">
+              <img src="./g01/G01-first-slider-grey.jpg" alt="">
             </div>
             <div>
-              <img src="./01F/01F-first-slider-red.jpg" alt="">
+              <img src="./g01/G01-first-slider-red.jpg" alt="">
             </div>
             <div>
-              <img src="./01F/01F-first-slider-black.jpg" alt="">
+              <img src="./g01/G01-first-slider-black.jpg" alt="">
             </div>
           </div>
         </div>
@@ -371,41 +437,41 @@
     <div class="container">
       <h3 class="car-interior_title">Загляните в салон SWM G01</h3>
       <div class="car-interior">
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-1.png" />
+        <a href="./images/interior-go1-1.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-1.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-2.png" />
+        <a href="./images/interior-go1-2.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-2.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-3.png" />
+        <a href="./images/interior-go1-3.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-3.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-4.png" />
+        <a href="./images/interior-go1-4.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-4.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-5.png" />
+        <a href="./images/interior-go1-5.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-5.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-6.png" />
+        <a href="./images/interior-go1-6.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-6.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-7.png" />
+        <a href="./images/interior-go1-7.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-7.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-8.png" />
+        <a href="./images/interior-go1-8.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-8.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-9.png" />
+        <a href="./images/interior-go1-9.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-9.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-10.png" />
+        <a href="./images/interior-go1-10.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-10.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-11.png" />
+        <a href="./images/interior-go1-11.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-11.jpg" />
         </a>
-        <a href="./images/headlights-3.png" data-fancybox="gallery-interior">
-          <img src="./images/interior-go1-12.png" />
+        <a href="./images/interior-go1-12.jpg" data-fancybox="gallery-interior">
+          <img src="./images/interior-go1-12.jpg" />
         </a>
       </div>
     </div>
